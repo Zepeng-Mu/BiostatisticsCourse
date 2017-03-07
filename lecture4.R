@@ -1,0 +1,6 @@
+male = sample(c('AB', 'Ab', 'aB', 'ab'), 10000, rep = T)
+female = sample(c('AB', 'Ab', 'aB', 'ab'), 10000, rep = T)
+table(male, female)
+chit = chisq.test(c(5624, 1871, 1877, 628), p = c(9/16, 3/16, 3/16, 1/16))
+print(chit)
+qchisq(0.95, df = 3)
